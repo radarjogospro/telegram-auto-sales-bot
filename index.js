@@ -22,7 +22,7 @@ bot.action('comprar', async (ctx) => {
 bot.action('suporte', async (ctx) => {
   await ctx.answerCbQuery();
   await ctx.reply(
-    '🛟 Suporte\n\nFale com: @SEUUSUARIO'
+    '🛟 Suporte\n\nFale com: @gerente_12'
   );
 });
 
