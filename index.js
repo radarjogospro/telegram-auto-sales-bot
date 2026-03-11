@@ -10,6 +10,7 @@ bot.start((ctx) => {
   [Markup.button.callback('⚙️ Como funciona', 'como_funciona')],
   [Markup.button.callback('📊 Ver exemplo real', 'exemplo')],
   [Markup.button.url('🛟 Falar com suporte', 'https://t.me/gerente_12')]
+      ])
   );
 });
 
