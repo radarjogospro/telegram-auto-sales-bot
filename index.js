@@ -16,7 +16,7 @@ bot.start((ctx) => {
 bot.action('comprar', async (ctx) => {
   await ctx.answerCbQuery();
   await ctx.reply(
-    '💳 Exemplo de fluxo de compra\n\nApós o pagamento, o acesso pode ser liberado automaticamente.\n\nEsse bot é apenas uma demonstração.'
+    '💳 Demonstração de compra\n\n1️⃣ O cliente escolhe o acesso ou produto\n2️⃣ Faz o pagamento por link ou Pix\n3️⃣ O sistema identifica a confirmação\n4️⃣ O bot libera automaticamente o acesso, arquivo ou link\n\nEssa automação pode ser usada para canais VIP, comunidades, conteúdos exclusivos e produtos digitais.'
   );
 });
 
