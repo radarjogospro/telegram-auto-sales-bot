@@ -4,7 +4,7 @@ const bot = new Telegraf(process.env.BOT_TOKEN);
 
 bot.start((ctx) => {
   ctx.reply(
-    '🤖 Bot de Demonstração\n\nEste é um exemplo de bot automático para vendas no Telegram.\n\nEscolha uma opção abaixo:',
+  '🤖 Automação de Vendas para Telegram\n\nEste bot demonstra como funciona um sistema automático de vendas.\n\n✔ Recebe pagamento\n✔ Libera acesso automaticamente\n✔ Entrega produtos ou links\n✔ Botão de suporte integrado\n\nEscolha uma opção abaixo:',
     Markup.inlineKeyboard([
       [Markup.button.callback('💳 Comprar acesso', 'comprar')],
       [Markup.button.callback('🛟 Suporte', 'suporte')]
