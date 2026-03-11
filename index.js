@@ -8,7 +8,7 @@ bot.start((ctx) => {
     Markup.inlineKeyboard([
       [Markup.button.callback('💳 Comprar acesso', 'comprar')],
       [Markup.button.callback('⚙️ Como funciona', 'como_funciona')],
-      [Markup.button.callback('🛟 Suporte', 'suporte')]
+      [Markup.button.url('🛟 Falar com suporte', 'https://t.me/gerente_12')]
     ])
   );
 });
@@ -24,13 +24,6 @@ bot.action('como_funciona', async (ctx) => {
   await ctx.answerCbQuery();
   await ctx.reply(
     '⚙️ Como funciona\n\n1️⃣ O cliente clica em comprar\n2️⃣ Faz o pagamento\n3️⃣ O sistema confirma automaticamente\n4️⃣ O bot libera o acesso, link ou produto\n\nEsse processo pode ser adaptado para canais VIP, comunidades, arquivos, cursos e outros produtos digitais.'
-  );
-});
-
-bot.action('suporte', async (ctx) => {
-  await ctx.answerCbQuery();
-  await ctx.reply(
-    '🛟 Suporte\n\nFale com: @gerente_12'
   );
 });
 
